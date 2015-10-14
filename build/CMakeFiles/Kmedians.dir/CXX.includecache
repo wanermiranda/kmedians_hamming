@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/waner/git-new/kmedians_hamming/ArrayUtils.h
+stdlib.h
+-
+
+/home/waner/git-new/kmedians_hamming/Kmedians.cpp
+vector
+-
+set
+-
+cmath
+-
+Kmedians.h
+/home/waner/git-new/kmedians_hamming/Kmedians.h
+ArrayUtils.h
+/home/waner/git-new/kmedians_hamming/ArrayUtils.h
+
+/home/waner/git-new/kmedians_hamming/Kmedians.h
+stddef.h
+-
+iostream
+-
+random
+-
+
+/home/waner/git-new/kmedians_hamming/main.cpp
+iostream
+-
+
