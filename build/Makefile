@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/waner/git-new/kmedians_hamming
+CMAKE_SOURCE_DIR = /home/gorigan/GRET/kmedians_hamming
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/waner/git-new/kmedians_hamming/build
+CMAKE_BINARY_DIR = /home/gorigan/GRET/kmedians_hamming/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/waner/git-new/kmedians_hamming/build/CMakeFiles /home/waner/git-new/kmedians_hamming/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gorigan/GRET/kmedians_hamming/build/CMakeFiles /home/gorigan/GRET/kmedians_hamming/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/waner/git-new/kmedians_hamming/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/gorigan/GRET/kmedians_hamming/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,71 +111,179 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Kmedians
+# Target rules for targets named feature_extractor
 
 # Build rule for target.
-Kmedians: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Kmedians
-.PHONY : Kmedians
+feature_extractor: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 feature_extractor
+.PHONY : feature_extractor
 
 # fast build rule for target.
-Kmedians/fast:
-	$(MAKE) -f CMakeFiles/Kmedians.dir/build.make CMakeFiles/Kmedians.dir/build
-.PHONY : Kmedians/fast
+feature_extractor/fast:
+	$(MAKE) -f CMakeFiles/feature_extractor.dir/build.make CMakeFiles/feature_extractor.dir/build
+.PHONY : feature_extractor/fast
 
-Kmedians.o: Kmedians.cpp.o
+KmediansBinary.o: KmediansBinary.cpp.o
 
-.PHONY : Kmedians.o
+.PHONY : KmediansBinary.o
 
 # target to build an object file
-Kmedians.cpp.o:
-	$(MAKE) -f CMakeFiles/Kmedians.dir/build.make CMakeFiles/Kmedians.dir/Kmedians.cpp.o
-.PHONY : Kmedians.cpp.o
+KmediansBinary.cpp.o:
+	$(MAKE) -f CMakeFiles/feature_extractor.dir/build.make CMakeFiles/feature_extractor.dir/KmediansBinary.cpp.o
+.PHONY : KmediansBinary.cpp.o
 
-Kmedians.i: Kmedians.cpp.i
+KmediansBinary.i: KmediansBinary.cpp.i
 
-.PHONY : Kmedians.i
+.PHONY : KmediansBinary.i
 
 # target to preprocess a source file
-Kmedians.cpp.i:
-	$(MAKE) -f CMakeFiles/Kmedians.dir/build.make CMakeFiles/Kmedians.dir/Kmedians.cpp.i
-.PHONY : Kmedians.cpp.i
+KmediansBinary.cpp.i:
+	$(MAKE) -f CMakeFiles/feature_extractor.dir/build.make CMakeFiles/feature_extractor.dir/KmediansBinary.cpp.i
+.PHONY : KmediansBinary.cpp.i
 
-Kmedians.s: Kmedians.cpp.s
+KmediansBinary.s: KmediansBinary.cpp.s
 
-.PHONY : Kmedians.s
+.PHONY : KmediansBinary.s
 
 # target to generate assembly for a file
-Kmedians.cpp.s:
-	$(MAKE) -f CMakeFiles/Kmedians.dir/build.make CMakeFiles/Kmedians.dir/Kmedians.cpp.s
-.PHONY : Kmedians.cpp.s
+KmediansBinary.cpp.s:
+	$(MAKE) -f CMakeFiles/feature_extractor.dir/build.make CMakeFiles/feature_extractor.dir/KmediansBinary.cpp.s
+.PHONY : KmediansBinary.cpp.s
 
-main.o: main.cpp.o
+bag_of_words.o: bag_of_words.cc.o
+
+.PHONY : bag_of_words.o
+
+# target to build an object file
+bag_of_words.cc.o:
+	$(MAKE) -f CMakeFiles/feature_extractor.dir/build.make CMakeFiles/feature_extractor.dir/bag_of_words.cc.o
+.PHONY : bag_of_words.cc.o
+
+bag_of_words.i: bag_of_words.cc.i
+
+.PHONY : bag_of_words.i
+
+# target to preprocess a source file
+bag_of_words.cc.i:
+	$(MAKE) -f CMakeFiles/feature_extractor.dir/build.make CMakeFiles/feature_extractor.dir/bag_of_words.cc.i
+.PHONY : bag_of_words.cc.i
+
+bag_of_words.s: bag_of_words.cc.s
+
+.PHONY : bag_of_words.s
+
+# target to generate assembly for a file
+bag_of_words.cc.s:
+	$(MAKE) -f CMakeFiles/feature_extractor.dir/build.make CMakeFiles/feature_extractor.dir/bag_of_words.cc.s
+.PHONY : bag_of_words.cc.s
+
+global_descriptors.o: global_descriptors.cc.o
+
+.PHONY : global_descriptors.o
+
+# target to build an object file
+global_descriptors.cc.o:
+	$(MAKE) -f CMakeFiles/feature_extractor.dir/build.make CMakeFiles/feature_extractor.dir/global_descriptors.cc.o
+.PHONY : global_descriptors.cc.o
+
+global_descriptors.i: global_descriptors.cc.i
+
+.PHONY : global_descriptors.i
+
+# target to preprocess a source file
+global_descriptors.cc.i:
+	$(MAKE) -f CMakeFiles/feature_extractor.dir/build.make CMakeFiles/feature_extractor.dir/global_descriptors.cc.i
+.PHONY : global_descriptors.cc.i
+
+global_descriptors.s: global_descriptors.cc.s
+
+.PHONY : global_descriptors.s
+
+# target to generate assembly for a file
+global_descriptors.cc.s:
+	$(MAKE) -f CMakeFiles/feature_extractor.dir/build.make CMakeFiles/feature_extractor.dir/global_descriptors.cc.s
+.PHONY : global_descriptors.cc.s
+
+imgHelpers.o: imgHelpers.cc.o
+
+.PHONY : imgHelpers.o
+
+# target to build an object file
+imgHelpers.cc.o:
+	$(MAKE) -f CMakeFiles/feature_extractor.dir/build.make CMakeFiles/feature_extractor.dir/imgHelpers.cc.o
+.PHONY : imgHelpers.cc.o
+
+imgHelpers.i: imgHelpers.cc.i
+
+.PHONY : imgHelpers.i
+
+# target to preprocess a source file
+imgHelpers.cc.i:
+	$(MAKE) -f CMakeFiles/feature_extractor.dir/build.make CMakeFiles/feature_extractor.dir/imgHelpers.cc.i
+.PHONY : imgHelpers.cc.i
+
+imgHelpers.s: imgHelpers.cc.s
+
+.PHONY : imgHelpers.s
+
+# target to generate assembly for a file
+imgHelpers.cc.s:
+	$(MAKE) -f CMakeFiles/feature_extractor.dir/build.make CMakeFiles/feature_extractor.dir/imgHelpers.cc.s
+.PHONY : imgHelpers.cc.s
+
+latch.o: latch.cpp.o
+
+.PHONY : latch.o
+
+# target to build an object file
+latch.cpp.o:
+	$(MAKE) -f CMakeFiles/feature_extractor.dir/build.make CMakeFiles/feature_extractor.dir/latch.cpp.o
+.PHONY : latch.cpp.o
+
+latch.i: latch.cpp.i
+
+.PHONY : latch.i
+
+# target to preprocess a source file
+latch.cpp.i:
+	$(MAKE) -f CMakeFiles/feature_extractor.dir/build.make CMakeFiles/feature_extractor.dir/latch.cpp.i
+.PHONY : latch.cpp.i
+
+latch.s: latch.cpp.s
+
+.PHONY : latch.s
+
+# target to generate assembly for a file
+latch.cpp.s:
+	$(MAKE) -f CMakeFiles/feature_extractor.dir/build.make CMakeFiles/feature_extractor.dir/latch.cpp.s
+.PHONY : latch.cpp.s
+
+main.o: main.cc.o
 
 .PHONY : main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Kmedians.dir/build.make CMakeFiles/Kmedians.dir/main.cpp.o
-.PHONY : main.cpp.o
+main.cc.o:
+	$(MAKE) -f CMakeFiles/feature_extractor.dir/build.make CMakeFiles/feature_extractor.dir/main.cc.o
+.PHONY : main.cc.o
 
-main.i: main.cpp.i
+main.i: main.cc.i
 
 .PHONY : main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Kmedians.dir/build.make CMakeFiles/Kmedians.dir/main.cpp.i
-.PHONY : main.cpp.i
+main.cc.i:
+	$(MAKE) -f CMakeFiles/feature_extractor.dir/build.make CMakeFiles/feature_extractor.dir/main.cc.i
+.PHONY : main.cc.i
 
-main.s: main.cpp.s
+main.s: main.cc.s
 
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Kmedians.dir/build.make CMakeFiles/Kmedians.dir/main.cpp.s
-.PHONY : main.cpp.s
+main.cc.s:
+	$(MAKE) -f CMakeFiles/feature_extractor.dir/build.make CMakeFiles/feature_extractor.dir/main.cc.s
+.PHONY : main.cc.s
 
 # Help Target
 help:
@@ -185,10 +293,22 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Kmedians"
-	@echo "... Kmedians.o"
-	@echo "... Kmedians.i"
-	@echo "... Kmedians.s"
+	@echo "... feature_extractor"
+	@echo "... KmediansBinary.o"
+	@echo "... KmediansBinary.i"
+	@echo "... KmediansBinary.s"
+	@echo "... bag_of_words.o"
+	@echo "... bag_of_words.i"
+	@echo "... bag_of_words.s"
+	@echo "... global_descriptors.o"
+	@echo "... global_descriptors.i"
+	@echo "... global_descriptors.s"
+	@echo "... imgHelpers.o"
+	@echo "... imgHelpers.i"
+	@echo "... imgHelpers.s"
+	@echo "... latch.o"
+	@echo "... latch.i"
+	@echo "... latch.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

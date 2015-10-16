@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/waner/git-new/kmedians_hamming/Kmedians.cpp" "/home/waner/git-new/kmedians_hamming/build/CMakeFiles/Kmedians.dir/Kmedians.cpp.o"
-  "/home/waner/git-new/kmedians_hamming/main.cpp" "/home/waner/git-new/kmedians_hamming/build/CMakeFiles/Kmedians.dir/main.cpp.o"
+  "/home/waner/git-new/kmedians_hamming/KmediansBinary.cpp" "/home/waner/git-new/kmedians_hamming/build/CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.o"
+  "/home/waner/git-new/kmedians_hamming/main.cpp" "/home/waner/git-new/kmedians_hamming/build/CMakeFiles/KmediansBinary.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -337,7 +337,7 @@ void extractlist_HOG_1internal(string dataset_file, string output_dir) {
 Mat getLATCHFeatures(const char* TAG, FastFeatureDetector fastDetector,
 		features2d::LATCHDescriptorExtractorImpl extractor, BFMatcher matcher, cv::Mat vocabulary, const char* path) {
 	vector<KeyPoint> keypoints;
-	Mat featureVector = Mat(0, ih::DICTIONARY_SIZE_LATCH, CV_32F);
+	Mat featureVector = Mat(0, ih::DICTIONARY_SIZE_LATCH, CV_8U);
 
 	Mat img = loadScaledImage_desc(path, CV_LOAD_IMAGE_GRAYSCALE);
 	printf("\nRunning detection on %s", path);
@@ -347,7 +347,7 @@ Mat getLATCHFeatures(const char* TAG, FastFeatureDetector fastDetector,
 	KeyPointsFilter::retainBest(keypoints, ih::MAXIMUM_KEYPOINTS);
 	printf("\nKeypoints after %zu", keypoints.size());
 
-	printf("\nRunning SIFT on %s", path);
+	printf("\nRunning LATCH on %s", path);
 	Mat matDescriptor;
 	//extract BoW (or BoF) descriptor from given image
 	extractor.compute(img, keypoints, matDescriptor);
@@ -364,7 +364,7 @@ Mat getLATCHFeatures(const char* TAG, FastFeatureDetector fastDetector,
 void extractlist_LATCH_1internal(string dataset_file, string output_dir) {
 	const char* TAG = "jni-goldenretrieval";
 
-	int bytes = 64; bool rotationInvariance = true; int half_ssd_size = 3;
+	int bytes = 32; bool rotationInvariance = true; int half_ssd_size = 3;
 	FastFeatureDetector detector;
 	features2d::LATCHDescriptorExtractorImpl extractor(bytes, rotationInvariance, half_ssd_size);;
 	vector<KeyPoint> keypoints;
@@ -376,7 +376,7 @@ void extractlist_LATCH_1internal(string dataset_file, string output_dir) {
 	FileStorage fs(ih::MNT_SDCARD_DICTIONARY_LATCH_YML, FileStorage::READ);
 	fs["dictionary"] >> dictionary;
 //	Mat dictionary;
-//	dictionaryF.convertTo(dictionary, CV_32F);
+	dictionary.convertTo(dictionary, CV_8U);
 	printf("\nDictionary sizes %d x %d", dictionary.cols, dictionary.rows);
 	matcher.add(std::vector<cv::Mat>(1, dictionary));
 	fs.release();

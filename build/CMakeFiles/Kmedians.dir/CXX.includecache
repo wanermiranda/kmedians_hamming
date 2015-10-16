@@ -10,19 +10,19 @@
 stdlib.h
 -
 
-/home/waner/git-new/kmedians_hamming/Kmedians.cpp
+/home/waner/git-new/kmedians_hamming/KmediansBinary.cpp
 vector
 -
 set
 -
 cmath
 -
-Kmedians.h
-/home/waner/git-new/kmedians_hamming/Kmedians.h
+KmediansBinary.h
+/home/waner/git-new/kmedians_hamming/KmediansBinary.h
 ArrayUtils.h
 /home/waner/git-new/kmedians_hamming/ArrayUtils.h
 
-/home/waner/git-new/kmedians_hamming/Kmedians.h
+/home/waner/git-new/kmedians_hamming/KmediansBinary.h
 stddef.h
 -
 iostream

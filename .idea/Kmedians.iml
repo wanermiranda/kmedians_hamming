@@ -5,8 +5,8 @@
       <sourceFolder url="file://$MODULE_DIR$/ArrayUtils.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CONSTANTS.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Kmedians.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Kmedians.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/KmediansBinary.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/KmediansBinary.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bag_of_words.cc" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/bag_of_words.hpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/global_descriptors.cc" isTestSource="false" />

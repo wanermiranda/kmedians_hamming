@@ -1,1 +1,1 @@
-/usr/bin/c++    -std=c++11   CMakeFiles/Kmedians.dir/main.cpp.o CMakeFiles/Kmedians.dir/Kmedians.cpp.o  -o Kmedians -rdynamic 
+/usr/bin/c++    -std=c++11   CMakeFiles/KmediansBinary.dir/main.cpp.o CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.o  -o KmediansBinary -rdynamic

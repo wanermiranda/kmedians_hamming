@@ -1,4 +1,4 @@
-# Install script for directory: /home/waner/git-new/kmedians_hamming
+# Install script for directory: /home/gorigan/GRET/kmedians_hamming
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/waner/git-new/kmedians_hamming/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/gorigan/GRET/kmedians_hamming/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -49,92 +49,92 @@ CMAKE_SOURCE_DIR = /home/waner/git-new/kmedians_hamming
 CMAKE_BINARY_DIR = /home/waner/git-new/kmedians_hamming/build
 
 # Include any dependencies generated for this target.
-include CMakeFiles/Kmedians.dir/depend.make
+include CMakeFiles/KmediansBinary.dir/depend.make
 
 # Include the progress variables for this target.
-include CMakeFiles/Kmedians.dir/progress.make
+include CMakeFiles/KmediansBinary.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include CMakeFiles/Kmedians.dir/flags.make
+include CMakeFiles/KmediansBinary.dir/flags.make
 
-CMakeFiles/Kmedians.dir/main.cpp.o: CMakeFiles/Kmedians.dir/flags.make
-CMakeFiles/Kmedians.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/waner/git-new/kmedians_hamming/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Kmedians.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Kmedians.dir/main.cpp.o -c /home/waner/git-new/kmedians_hamming/main.cpp
+CMakeFiles/KmediansBinary.dir/main.cpp.o: CMakeFiles/KmediansBinary.dir/flags.make
+CMakeFiles/KmediansBinary.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/waner/git-new/kmedians_hamming/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/KmediansBinary.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/KmediansBinary.dir/main.cpp.o -c /home/waner/git-new/kmedians_hamming/main.cpp
 
-CMakeFiles/Kmedians.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Kmedians.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/waner/git-new/kmedians_hamming/main.cpp > CMakeFiles/Kmedians.dir/main.cpp.i
+CMakeFiles/KmediansBinary.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KmediansBinary.dir/main.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/waner/git-new/kmedians_hamming/main.cpp > CMakeFiles/KmediansBinary.dir/main.cpp.i
 
-CMakeFiles/Kmedians.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kmedians.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/waner/git-new/kmedians_hamming/main.cpp -o CMakeFiles/Kmedians.dir/main.cpp.s
+CMakeFiles/KmediansBinary.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KmediansBinary.dir/main.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/waner/git-new/kmedians_hamming/main.cpp -o CMakeFiles/KmediansBinary.dir/main.cpp.s
 
-CMakeFiles/Kmedians.dir/main.cpp.o.requires:
+CMakeFiles/KmediansBinary.dir/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/Kmedians.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/KmediansBinary.dir/main.cpp.o.requires
 
-CMakeFiles/Kmedians.dir/main.cpp.o.provides: CMakeFiles/Kmedians.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Kmedians.dir/build.make CMakeFiles/Kmedians.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/Kmedians.dir/main.cpp.o.provides
+CMakeFiles/KmediansBinary.dir/main.cpp.o.provides: CMakeFiles/KmediansBinary.dir/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/KmediansBinary.dir/build.make CMakeFiles/KmediansBinary.dir/main.cpp.o.provides.build
+.PHONY : CMakeFiles/KmediansBinary.dir/main.cpp.o.provides
 
-CMakeFiles/Kmedians.dir/main.cpp.o.provides.build: CMakeFiles/Kmedians.dir/main.cpp.o
-
-
-CMakeFiles/Kmedians.dir/Kmedians.cpp.o: CMakeFiles/Kmedians.dir/flags.make
-CMakeFiles/Kmedians.dir/Kmedians.cpp.o: ../Kmedians.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/waner/git-new/kmedians_hamming/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Kmedians.dir/Kmedians.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Kmedians.dir/Kmedians.cpp.o -c /home/waner/git-new/kmedians_hamming/Kmedians.cpp
-
-CMakeFiles/Kmedians.dir/Kmedians.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Kmedians.dir/Kmedians.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/waner/git-new/kmedians_hamming/Kmedians.cpp > CMakeFiles/Kmedians.dir/Kmedians.cpp.i
-
-CMakeFiles/Kmedians.dir/Kmedians.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Kmedians.dir/Kmedians.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/waner/git-new/kmedians_hamming/Kmedians.cpp -o CMakeFiles/Kmedians.dir/Kmedians.cpp.s
-
-CMakeFiles/Kmedians.dir/Kmedians.cpp.o.requires:
-
-.PHONY : CMakeFiles/Kmedians.dir/Kmedians.cpp.o.requires
-
-CMakeFiles/Kmedians.dir/Kmedians.cpp.o.provides: CMakeFiles/Kmedians.dir/Kmedians.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Kmedians.dir/build.make CMakeFiles/Kmedians.dir/Kmedians.cpp.o.provides.build
-.PHONY : CMakeFiles/Kmedians.dir/Kmedians.cpp.o.provides
-
-CMakeFiles/Kmedians.dir/Kmedians.cpp.o.provides.build: CMakeFiles/Kmedians.dir/Kmedians.cpp.o
+CMakeFiles/KmediansBinary.dir/main.cpp.o.provides.build: CMakeFiles/KmediansBinary.dir/main.cpp.o
 
 
-# Object files for target Kmedians
+CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.o: CMakeFiles/KmediansBinary.dir/flags.make
+CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.o: ../KmediansBinary.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/waner/git-new/kmedians_hamming/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.o -c /home/waner/git-new/kmedians_hamming/KmediansBinary.cpp
+
+CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/waner/git-new/kmedians_hamming/KmediansBinary.cpp > CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.i
+
+CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/waner/git-new/kmedians_hamming/KmediansBinary.cpp -o CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.s
+
+CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.o.requires:
+
+.PHONY : CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.o.requires
+
+CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.o.provides: CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.o.requires
+	$(MAKE) -f CMakeFiles/KmediansBinary.dir/build.make CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.o.provides.build
+.PHONY : CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.o.provides
+
+CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.o.provides.build: CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.o
+
+
+# Object files for target KmediansBinary
 Kmedians_OBJECTS = \
-"CMakeFiles/Kmedians.dir/main.cpp.o" \
-"CMakeFiles/Kmedians.dir/Kmedians.cpp.o"
+"CMakeFiles/KmediansBinary.dir/main.cpp.o" \
+"CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.o"
 
-# External object files for target Kmedians
+# External object files for target KmediansBinary
 Kmedians_EXTERNAL_OBJECTS =
 
-Kmedians: CMakeFiles/Kmedians.dir/main.cpp.o
-Kmedians: CMakeFiles/Kmedians.dir/Kmedians.cpp.o
-Kmedians: CMakeFiles/Kmedians.dir/build.make
-Kmedians: CMakeFiles/Kmedians.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/waner/git-new/kmedians_hamming/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Kmedians"
-	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Kmedians.dir/link.txt --verbose=$(VERBOSE)
+KmediansBinary: CMakeFiles/KmediansBinary.dir/main.cpp.o
+KmediansBinary: CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.o
+KmediansBinary: CMakeFiles/KmediansBinary.dir/build.make
+KmediansBinary: CMakeFiles/KmediansBinary.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/waner/git-new/kmedians_hamming/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable KmediansBinary"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/KmediansBinary.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Kmedians.dir/build: Kmedians
+CMakeFiles/KmediansBinary.dir/build: KmediansBinary
 
-.PHONY : CMakeFiles/Kmedians.dir/build
+.PHONY : CMakeFiles/KmediansBinary.dir/build
 
-CMakeFiles/Kmedians.dir/requires: CMakeFiles/Kmedians.dir/main.cpp.o.requires
-CMakeFiles/Kmedians.dir/requires: CMakeFiles/Kmedians.dir/Kmedians.cpp.o.requires
+CMakeFiles/KmediansBinary.dir/requires: CMakeFiles/KmediansBinary.dir/main.cpp.o.requires
+CMakeFiles/KmediansBinary.dir/requires: CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.o.requires
 
-.PHONY : CMakeFiles/Kmedians.dir/requires
+.PHONY : CMakeFiles/KmediansBinary.dir/requires
 
-CMakeFiles/Kmedians.dir/clean:
-	$(CMAKE_COMMAND) -P CMakeFiles/Kmedians.dir/cmake_clean.cmake
-.PHONY : CMakeFiles/Kmedians.dir/clean
+CMakeFiles/KmediansBinary.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles/KmediansBinary.dir/cmake_clean.cmake
+.PHONY : CMakeFiles/KmediansBinary.dir/clean
 
-CMakeFiles/Kmedians.dir/depend:
-	cd /home/waner/git-new/kmedians_hamming/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/waner/git-new/kmedians_hamming /home/waner/git-new/kmedians_hamming /home/waner/git-new/kmedians_hamming/build /home/waner/git-new/kmedians_hamming/build /home/waner/git-new/kmedians_hamming/build/CMakeFiles/Kmedians.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : CMakeFiles/Kmedians.dir/depend
+CMakeFiles/KmediansBinary.dir/depend:
+	cd /home/waner/git-new/kmedians_hamming/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/waner/git-new/kmedians_hamming /home/waner/git-new/kmedians_hamming /home/waner/git-new/kmedians_hamming/build /home/waner/git-new/kmedians_hamming/build /home/waner/git-new/kmedians_hamming/build/CMakeFiles/KmediansBinary.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/KmediansBinary.dir/depend
 

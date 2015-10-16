@@ -1,5 +1,6 @@
 #include "bag_of_words.hpp"
 #include "precomp.hpp"
+#include "KmediansBinary.h"
 using namespace cv;
 
 
@@ -50,7 +51,8 @@ void buildDictionary_ORB(string dataset_file, string dictionary_out) {
 		//cluster the feature vectors
 		Mat labels;
 		Mat dictionary;
-//		kmedians(featuresUnclusteredF,25, labels,tc, retries, flags, dictionary);
+
+//        KmediansBinary(FEATURES
 //		Mat dictionary = bowTrainer.cluster(featuresUnclusteredF);
 
 		FileStorage fs(dictionary_out, FileStorage::WRITE);
@@ -131,7 +133,7 @@ void buildDictionary_SIFT(string dataset_file, string dictionary_out) {
 
 void buildDictionary_LATCH2(string dataset_file, string dictionary_out)
 {
-	int bytes = 64; bool rotationInvariance = true; int half_ssd_size = 3;
+	int bytes = 32; bool rotationInvariance = true; int half_ssd_size = 3;
 	FastFeatureDetector detector;
 	features2d::LATCHDescriptorExtractorImpl descriptor(bytes, rotationInvariance, half_ssd_size);;
 	vector<KeyPoint> keypoints;
@@ -143,7 +145,7 @@ void buildDictionary_LATCH2(string dataset_file, string dictionary_out)
 			std::string path;
 			int count = 0;
 			while (std::getline(ifs, path)) {
-//				if (++count > 100) break;
+//				if (++count > 10) break;
 				Mat descriptors;
 				vector<KeyPoint> keypoints;
 
@@ -165,19 +167,16 @@ void buildDictionary_LATCH2(string dataset_file, string dictionary_out)
 				descriptors.release();
 			}
 
-//			if (allDescriptors.type() != CV_32F) {
-//				allDescriptors.convertTo(allDescriptors, CV_32F);
-//			}
 
 			printf("Creating BoVW");
 			TermCriteria tc(CV_TERMCRIT_ITER, 100, 0.001);
-			int retries = 1;
-			int flags = KMEANS_PP_CENTERS;
+			int retries = 3;
+			int flags = KMEANS_RANDOM_CENTERS;
 
 			cv::Mat uDictionary;
 			Mat labels;
 
-//			kmedians(allDescriptors,ih::DICTIONARY_SIZE_LATCH, labels,tc, retries, flags, uDictionary);
+			KmediansBinary cluster(allDescriptors,ih::DICTIONARY_SIZE_LATCH, retries, uDictionary);
 
 
 			FileStorage fs(dictionary_out, FileStorage::WRITE);

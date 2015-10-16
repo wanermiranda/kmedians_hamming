@@ -41,17 +41,21 @@ int main(int argv, char **args) {
 			buildDictionary_SIFT(path, output);
 		else if (desc == "orb")
 			buildDictionary_ORB(path, output);
+		else if (desc == "hog")
+			buildDictionary_ORB(path, output);
 		else
-			buildDictionary_HOG(path, output);
+			buildDictionary_LATCH2(path, output);
 	}
 	else {
 		mkdir(output.c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
-//		if (desc == "sift")
-//			extractlist_SIFT_1internal(path, output);
-//		else if (desc == "orb")
-//			extractlist_ORB_1internal(path, output, keypoints_size);
-//		else if (desc == "HOG")
-//			extractlist_HOG_1internal(path, output);
+		if (desc == "sift")
+			extractlist_SIFT_1internal(path, output);
+		else if (desc == "orb")
+			extractlist_ORB_1internal(path, output, keypoints_size);
+		else if (desc == "hog")
+			extractlist_HOG_1internal(path, output);
+		else if (desc == "latch")
+			extractlist_LATCH_1internal(path, output);
 	}
 	return 0;
 }

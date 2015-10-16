@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Kmedians.dir/main.cpp.o"
-  "CMakeFiles/Kmedians.dir/Kmedians.cpp.o"
-  "Kmedians.pdb"
-  "Kmedians"
+  "CMakeFiles/KmediansBinary.dir/main.cpp.o"
+  "CMakeFiles/KmediansBinary.dir/KmediansBinary.cpp.o"
+  "KmediansBinary.pdb"
+  "KmediansBinary"
 )
 
 # Per-language clean rules from dependency scanning.
 foreach(lang CXX)
-  include(CMakeFiles/Kmedians.dir/cmake_clean_${lang}.cmake OPTIONAL)
+  include(CMakeFiles/KmediansBinary.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()
